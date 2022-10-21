@@ -18,7 +18,7 @@ from ovos_plugin_manager.templates.tts import TTS, TTSValidator, RemoteTTSExcept
 
 
 class Mimic3ServerTTSPlugin(TTS):
-    """Interface to Mimic3 Streaming TTS."""
+    """Interface to Mimic3 Server TTS."""
     public_servers = [
         "http://mycroft.blue-systems.com:59125/api/tts",
         "https://mimic3.jarbasai.online"
@@ -185,7 +185,7 @@ class Mimic3ServerTTSPlugin(TTS):
         Returns:
             set: supported languages
         """
-        return set(Mimic3StreamingTTSPluginConfig.keys())
+        return set(Mimic3ServerTTSPluginConfig.keys())
 
 
 # TODO manually check gender of each voice and add below

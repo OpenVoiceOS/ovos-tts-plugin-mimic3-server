@@ -1,17 +1,17 @@
 ## Description
 
-OVOS Streaming TTS plugin for [Mimic3](https://github.com/MycroftAI/mimic3)
+OVOS Server TTS plugin for [Mimic3](https://github.com/MycroftAI/mimic3)
 
 ## Install
 
-`pip install ovos-tts-plugin-mimic3-streaming`
+`pip install ovos-tts-plugin-mimic3-server`
 
 ## Configuration
 
 ```json
   "tts": {
-    "module": "ovos-tts-plugin-mimic3-streaming",
-    "ovos-tts-plugin-mimic3-streaming": {
+    "module": "ovos-tts-plugin-mimic3-server",
+    "ovos-tts-plugin-mimic3-server": {
         "voice": "slt"
     }
   }
