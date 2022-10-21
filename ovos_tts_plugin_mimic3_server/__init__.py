@@ -20,7 +20,8 @@ from ovos_plugin_manager.templates.tts import TTS, TTSValidator, RemoteTTSExcept
 class Mimic3ServerTTSPlugin(TTS):
     """Interface to Mimic3 Streaming TTS."""
     public_servers = [
-        "http://mycroft.blue-systems.com:59125/api/tts"
+        "http://mycroft.blue-systems.com:59125/api/tts",
+        "https://mimic3.jarbasai.online"
     ]
     default_voices = {
         # TODO add default voice for every lang
