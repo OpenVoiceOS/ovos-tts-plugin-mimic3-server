@@ -71,7 +71,7 @@ class Mimic3StreamingTTSPlugin(TTS):
             voices = Mimic3StreamingTTSPluginConfig[language]
             for voice in voices:
                 if self.voice == voice["voice"]:
-                    voice_path = voice["region"] + "/" + voice["dataset"] + "#" + voice["name"]
+                    voice_path = voice["region"] + "/" + voice["dataset"] + "#" + voice["voice"]
                     return voice_path
         else:
             return "en_US/vctk_low#p239"
