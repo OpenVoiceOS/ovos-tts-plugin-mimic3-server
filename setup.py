@@ -61,7 +61,7 @@ setup(
     version=get_version(),
     description='Mimic3 server plugin for OpenVoiceOS',
     url='https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server',
-    author='Aiix',
+    author='OpenVoiceOS',
     author_email='aix.m@outlook.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_mimic3_server'],
