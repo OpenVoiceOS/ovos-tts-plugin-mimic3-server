@@ -15,7 +15,7 @@ class TestTTS(unittest.TestCase):
     def test_speaker_in_voice(self):
         path = "/tmp/hello_awb.wav"
         # specify speaker together with voice
-        audio, phonemes = mimic.get_tts("hello world", "test4.wav",
+        audio, phonemes = mimic.get_tts("hello world", path,
                               voice="en_US/cmu-arctic_low#awb")
         self.assertEqual(audio, path)
         
