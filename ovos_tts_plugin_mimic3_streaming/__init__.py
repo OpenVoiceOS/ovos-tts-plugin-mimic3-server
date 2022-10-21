@@ -64,7 +64,7 @@ class Mimic3StreamingTTSPlugin(TTS):
         return set(Mimic3StreamingTTSPluginConfig.keys())
     
     def get_configured_voice_path(self):
-        lang = self.tts.lang.lower()
+        lang = self.config.get("lang", lang).lower()
         if lang in Mimic3StreamingTTSPluginConfig:
             voices = Mimic3StreamingTTSPluginConfig[lang]
             for voice in voices:
