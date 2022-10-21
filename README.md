@@ -39,6 +39,6 @@ from ovos_tts_plugin_mimic3_server import Mimic3ServerTTSPlugin
 tt = Mimic3ServerTTSPlugin()
 tt.get_tts("hello world", "test.wav", lang="en-gb")  # default voice
 tt.get_tts("hello world", "test3.wav", voice="en_US/cmu-arctic_low", speaker="slt")  # specify speaker via optional args
-tt.get_tts("hello world", "test4.wav", voice="en_US/cmu-arctic_low#lnh") # specify speaker together with voice
+tt.get_tts("hello world", "test4.wav", voice="en_US/cmu-arctic_low#awb") # specify speaker together with voice
 tt.get_tts("hello world", "test5.wav", voice="cmu-arctic_low#rms", lang="en-us")  # lang separated from voice key also valid
 ```
