@@ -56,7 +56,7 @@ jobs:
           pip install pytest pytest-timeout pytest-cov
       - name: Run unittests
         run: |
-          pytest --cov=ovos_tts_plugin_mimic2 --cov-report xml test/unittests
+          pytest --cov=ovos_tts_plugin_mimic3_streaming --cov-report xml test/unittests
           # NOTE: additional pytest invocations should also add the --cov-append flag
           #       or they will overwrite previous invocations' coverage reports
           #       (for an example, see OVOS Skill Manager's workflow)

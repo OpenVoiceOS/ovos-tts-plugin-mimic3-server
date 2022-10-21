@@ -44,8 +44,7 @@ class Mimic3StreamingTTSPlugin(TTS):
         """
         selected_voice = self.get_configured_voice_path()
         params = {"voice": selected_voice}
-        text = {"text": sentence}
-        r = requests.post(self.url, params=params, data=text)
+        r = requests.post(self.url, params=params, data=sentence)
         if not r.ok:
             raise RemoteTTSException(f"Mimic3 server error: {r.reason}")
         else:
