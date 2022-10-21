@@ -42,7 +42,7 @@ class Mimic3StreamingTTSPlugin(TTS):
         Returns:
             Tuple ((str) written file, None)
         """
-        selected_voice = self.get_configured_voice_path()
+        selected_voice = self.get_configured_voice_path(lang)
         params = {"voice": selected_voice}
         r = requests.post(self.url, params=params, data=sentence)
         if not r.ok:
@@ -63,10 +63,12 @@ class Mimic3StreamingTTSPlugin(TTS):
         """
         return set(Mimic3StreamingTTSPluginConfig.keys())
     
-    def get_configured_voice_path(self):
-        lang = self.config.get("lang", lang).lower()
-        if lang in Mimic3StreamingTTSPluginConfig:
-            voices = Mimic3StreamingTTSPluginConfig[lang]
+    def get_configured_voice_path(self, language=None):
+        if not language:
+            language = "en-us"
+
+        if language in Mimic3StreamingTTSPluginConfig:
+            voices = Mimic3StreamingTTSPluginConfig[language]
             for voice in voices:
                 if self.voice == voice["name"]:
                     voice_path = voice["region"] + "/" + voice["dataset"] + "#" + voice["name"]
