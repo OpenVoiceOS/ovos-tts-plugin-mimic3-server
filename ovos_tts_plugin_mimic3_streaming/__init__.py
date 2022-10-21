@@ -51,7 +51,8 @@ class Mimic3StreamingTTSPlugin(TTS):
             audio_data = r.content
         with open(wav_file, "wb") as f:
             f.write(audio_data)
-        return (wav_file, None) # No phonemes
+        pho = [['HH', '0.0775'], ['AH', '0.1550']]
+        return (wav_file, pho) # Pass fake pho or it fails at utterance2visemes g2p error
 
     @property
     def available_languages(self) -> set:
