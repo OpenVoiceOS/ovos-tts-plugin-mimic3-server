@@ -1,7 +1,7 @@
 import fileinput
 from os.path import join, dirname
 
-version_file = join(dirname(dirname(__file__)), "ovos_tts_plugin_mimic2", "version.py")
+version_file = join(dirname(dirname(__file__)), "ovos_tts_plugin_mimic3_streaming", "version.py")
 
 alpha_var_name = "VERSION_ALPHA"
 
