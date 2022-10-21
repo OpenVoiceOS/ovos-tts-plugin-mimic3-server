@@ -51,7 +51,7 @@ class Mimic3StreamingTTSPlugin(TTS):
             audio_data = r.content
         with open(wav_file, "wb") as f:
             f.write(audio_data)
-        return (wav_file)
+        return (wav_file, None) # No phonemes
 
     @property
     def available_languages(self) -> set:
