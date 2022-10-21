@@ -9,7 +9,7 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 def get_version():
     """ Find the version of the package"""
     version = None
-    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_mimic3_streaming', 'version.py')
+    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_mimic3_server', 'version.py')
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
         for line in f:
@@ -50,21 +50,21 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
-PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-mimic3-streaming = ' \
-                     'ovos_tts_plugin_mimic3_streaming:Mimic3StreamingTTSPlugin'
-SAMPLE_CONFIGS = 'ovos-tts-plugin-mimic3-streaming.config = ' \
-                 'ovos_tts_plugin_mimic3_streaming:Mimic3StreamingTTSPluginConfig'
+PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-mimic3-server = ' \
+                     'ovos_tts_plugin_mimic3_server:Mimic3ServerTTSPlugin'
+SAMPLE_CONFIGS = 'ovos-tts-plugin-mimic3-server.config = ' \
+                 'ovos_tts_plugin_mimic3_server:Mimic3ServerTTSPluginConfig'
 
 
 setup(
-    name='ovos-tts-plugin-mimic3-streaming',
+    name='ovos-tts-plugin-mimic3-server',
     version=get_version(),
-    description='Mimic3 streaming plugin for OpenVoiceOS',
-    url='https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming',
-    author='Aiix',
+    description='Mimic3 server plugin for OpenVoiceOS',
+    url='https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server',
+    author='OpenVoiceOS',
     author_email='aix.m@outlook.com',
     license='Apache-2.0',
-    packages=['ovos_tts_plugin_mimic3_streaming'],
+    packages=['ovos_tts_plugin_mimic3_server'],
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[

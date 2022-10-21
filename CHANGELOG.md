@@ -1,24 +1,24 @@
 # Changelog
 
-## [V0.0.0a6](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a6) (2022-10-21)
+## [V0.0.0a6](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a6) (2022-10-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a5...V0.0.0a6)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a5...V0.0.0a6)
 
-## [V0.0.0a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a5) (2022-10-21)
+## [V0.0.0a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a5) (2022-10-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a4...V0.0.0a5)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a4...V0.0.0a5)
 
-## [V0.0.0a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a4) (2022-10-21)
+## [V0.0.0a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a4) (2022-10-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a3...V0.0.0a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a3...V0.0.0a4)
 
-## [V0.0.0a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a3) (2022-10-21)
+## [V0.0.0a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a3) (2022-10-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a2...V0.0.0a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a2...V0.0.0a3)
 
-## [V0.0.0a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a2) (2022-10-21)
+## [V0.0.0a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a2) (2022-10-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/7d9bae8a3c3de19cd757699583fec3565adb665e...V0.0.0a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/7d9bae8a3c3de19cd757699583fec3565adb665e...V0.0.0a2)
 
 
 

@@ -6,7 +6,7 @@ on:
     branches:
       - dev
     paths-ignore:
-      - 'ovos_tts_plugin_mimic3_streaming/version.py'
+      - 'ovos_tts_plugin_mimic3_server/version.py'
       - 'test/**'
       - 'examples/**'
       - '.github/**'
@@ -14,7 +14,7 @@ on:
       - 'LICENSE'
       - 'CHANGELOG.md'
       - 'MANIFEST.in'
-      - 'readme.md'
+      - 'README.md'
       - 'scripts/**'
   workflow_dispatch:
 
