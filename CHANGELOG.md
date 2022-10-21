@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.0.0a6](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a6) (2022-10-21)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a5...V0.0.0a6)
+
 ## [V0.0.0a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/tree/V0.0.0a5) (2022-10-21)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-streaming/compare/V0.0.0a4...V0.0.0a5)
