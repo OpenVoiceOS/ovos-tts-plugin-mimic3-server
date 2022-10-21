@@ -54,10 +54,7 @@ class Mimic3ServerTTSPlugin(TTS):
             else:
                 LOG.warning("Default mimic3 voice not set!")
         super().__init__(lang, config, audio_ext='wav', ssml_tags=ssml_tags)
-        if self.config.get("url"):  # self hosted
-            self.url = self.config["url"]
-        else:
-            self.url = random.choice(self.public_servers)
+        self.url = self.config.get("url")
 
     def _validate_args_combo(self, lang=None, voice=None, speaker=None):
         if voice:
@@ -116,17 +113,30 @@ class Mimic3ServerTTSPlugin(TTS):
 
         sentence, ssml = self._apply_text_hacks(sentence)
 
-        params = {"voice": voice}
-        r = requests.post(self.url, params=params, data=sentence)
-        if not r.ok:
-            raise RemoteTTSException(f"Mimic3 server error: {r.reason}")
+        if not self.url:
+            # Try all public urls until one works
+            audio_data = self._get_from_public_servers(voice, sentence)
         else:
-            audio_data = r.content
+            r = requests.post(self.url, params={"voice": voice}, data=sentence)
+            if not r.ok:
+                raise RemoteTTSException(f"Mimic3 server error: {r.reason}")
+            else:
+                audio_data = r.content
 
         with open(wav_file, "wb") as f:
             f.write(audio_data)
 
         return (wav_file, None)
+
+    def _get_from_public_servers(self, voice, sentence):
+        for url in self.public_servers:
+            try:
+                r = requests.post(url, params={"voice": voice}, data=sentence)
+                if r.ok:
+                    return r.content
+            except:
+                continue
+        raise RemoteTTSException(f"All Mimic3 public servers are down, please self host mimic3")
 
     @staticmethod
     def _apply_text_hacks(sentence: str):
