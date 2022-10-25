@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a8...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a9...HEAD)
+
+**Merged pull requests:**
+
+- Feat/update config meta [\#3](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/pull/3) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.0a9](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a9) (2022-10-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a8...V0.0.0a9)
 
 **Implemented enhancements:**
 
