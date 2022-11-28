@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a9...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a10...HEAD)
+
+**Implemented enhancements:**
+
+- \[init\] Add tts.smartgic.io Mimic 3 server [\#4](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/pull/4) ([goldyfruit](https://github.com/goldyfruit))
+
+## [V0.0.0a10](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a10) (2022-10-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a9...V0.0.0a10)
 
 **Merged pull requests:**
 
