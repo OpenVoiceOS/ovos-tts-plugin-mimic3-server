@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a12...HEAD)
+
+**Merged pull requests:**
+
+- Encode POST body [\#5](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/pull/5) ([atd](https://github.com/atd))
+
+## [V0.0.0a12](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a12) (2023-02-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a11...V0.0.0a12)
+
 ## [V0.0.0a11](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a11) (2022-11-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a10...V0.0.0a11)
