@@ -21,8 +21,8 @@ class Mimic3ServerTTSPlugin(TTS):
     """Interface to Mimic3 Server TTS."""
     public_servers = [
         "http://mycroft.blue-systems.com:59125/api/tts",
-        "https://mimic3.ziggyai.online",
-        "https://tts.smartgic.io/mimic3"
+        "https://mimic3.ziggyai.online/api/tts",
+        "https://tts.smartgic.io/mimic3/api/tts"
     ]
     default_voices = {
         # TODO add default voice for every lang
@@ -119,9 +119,11 @@ class Mimic3ServerTTSPlugin(TTS):
             # Try all public urls until one works
             audio_data = self._get_from_public_servers(voice, sentence)
         else:
-            r = requests.post(self.url, params={"voice": voice}, data=sentence.encode())
+            r = requests.post(self.url, params={"voice": voice},
+                              data=sentence.encode())
             if not r.ok:
-                raise RemoteTTSException(f"Mimic3 server error: {r.reason}")
+                raise RemoteTTSException(f"Mimic3 server ({self.url}) error: "
+                                         f"{r.status_code} - {r.reason}")
             else:
                 audio_data = r.content
 
