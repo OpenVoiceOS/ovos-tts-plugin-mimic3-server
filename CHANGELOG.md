@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.0.0](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0) (2023-03-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a14...V0.0.0)
+
 ## [V0.0.0a14](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.0a14) (2023-03-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0a13...V0.0.0a14)
