@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: ovos-tts-plugin-mimic3-server
-Version: 0.0.0
+Version: 0.0.1
 Summary: Mimic3 server plugin for OpenVoiceOS
 Home-page: https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server
 Author: OpenVoiceOS
