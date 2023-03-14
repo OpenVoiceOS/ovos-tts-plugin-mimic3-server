@@ -58,10 +58,13 @@ class Mimic3ServerTTSPlugin(TTS):
             else:
                 LOG.warning("Default mimic3 voice not set!")
                 
-        if speaker and not voice:
-            pass # TODO - check voices for matches
-        elif speaker and voice:
-            config["voice"] = voice + "#" + speaker
+        if speaker:
+            if not voice:
+                pass # TODO - check voices for matches
+            elif voice:
+                # TODO - better speaker config mismatch handling if specified twice
+                if not voice.endswith(f"#{speaker}"):
+                    config["voice"] = voice + "#" + speaker
         super().__init__(lang, config, audio_ext='wav', ssml_tags=ssml_tags)
         self.url = self.config.get("url")
 
