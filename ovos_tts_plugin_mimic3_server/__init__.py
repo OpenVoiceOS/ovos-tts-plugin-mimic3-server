@@ -72,13 +72,13 @@ class Mimic3ServerTTSPlugin(TTS):
                 voice = self.default_voices[lang]
             else:
                 raise ValueError(f"Selected lang {lang} is not supported!")
-        elif speaker and isinstance(speaker, str):
+        elif speaker:
             pass  # TODO validate speaker is valid for default voice
         else:
             LOG.debug("using mimic3 default config, no voice requested")
             return self.voice
 
-        if speaker and not voice.endswith(f"#{speaker}"):
+        if speaker and isinstance(speaker, str) and not voice.endswith(f"#{speaker}"):
             voice = f"{voice}#{speaker}"
 
         if lang:
