@@ -59,6 +59,10 @@ class Mimic3ServerTTSPlugin(TTS):
         self.url = self.config.get("url")
 
     def _validate_args_combo(self, lang=None, voice=None, speaker=None):
+        # HACK: bug in some neon-core versions - neon_audio.tts.neon:_get_tts:198 - INFO - Legacy Neon TTS signature found 
+        if isinstance(speaker, dict):
+            LOG.warning("Legacy Neon TTS signature found, pass speaker as a str")
+            speaker = None
         if voice:
             if "#" in voice:
                 voice, new_speaker = voice.split("#")
@@ -78,7 +82,7 @@ class Mimic3ServerTTSPlugin(TTS):
             LOG.debug("using mimic3 default config, no voice requested")
             return self.voice
 
-        if speaker and not voice.endswith(f"#{speaker}"):
+        if speaker and isinstance(speaker, str) and not voice.endswith(f"#{speaker}"):
             voice = f"{voice}#{speaker}"
 
         if lang:
