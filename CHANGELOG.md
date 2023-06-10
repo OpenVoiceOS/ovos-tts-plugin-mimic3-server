@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.2a1...HEAD)
+
+**Merged pull requests:**
+
+- Patch speaker param checks [\#11](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/pull/11) ([mikejgray](https://github.com/mikejgray))
+
+## [V0.0.2a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.2a1) (2023-03-14)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.1...V0.0.2a1)
+
 ## [V0.0.1](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.1) (2023-03-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.0...V0.0.1)
