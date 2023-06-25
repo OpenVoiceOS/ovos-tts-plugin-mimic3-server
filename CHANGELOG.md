@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.2a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.2a2...HEAD)
+
+**Merged pull requests:**
+
+- fix url for ziggyai [\#13](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/pull/13) ([builderjer](https://github.com/builderjer))
+
+## [V0.0.2a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/tree/V0.0.2a2) (2023-06-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server/compare/V0.0.2a1...V0.0.2a2)
 
 **Merged pull requests:**
 
