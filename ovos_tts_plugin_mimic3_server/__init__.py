@@ -21,7 +21,7 @@ class Mimic3ServerTTSPlugin(TTS):
     """Interface to Mimic3 Server TTS."""
     public_servers = [
         "http://mycroft.blue-systems.com:59125/api/tts",
-        "https://mimic3.ziggyai.online/api/tts",
+        "https://mimic3sample.ziggyai.online/api/tts",
         "https://tts.smartgic.io/mimic3/api/tts"
     ]
     default_voices = {
