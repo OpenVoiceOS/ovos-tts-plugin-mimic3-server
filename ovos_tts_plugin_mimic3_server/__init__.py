@@ -122,7 +122,7 @@ class Mimic3ServerTTSPlugin(TTS):
             # Try all public urls until one works
             audio_data = self._get_from_public_servers(voice, sentence)
         else:
-            r = requests.post(self.url, params={"voice": voice},
+            r = requests.post(self.url, params={"voice": voice, "ssml": ssml},
                               data=sentence.encode())
             if not r.ok:
                 raise RemoteTTSException(f"Mimic3 server ({self.url}) error: "
@@ -138,7 +138,7 @@ class Mimic3ServerTTSPlugin(TTS):
     def _get_from_public_servers(self, voice, sentence):
         for url in self.public_servers:
             try:
-                r = requests.post(url, params={"voice": voice}, data=sentence)
+                r = requests.post(url, params={"voice": voice, "ssml": ssml}, data=sentence)
                 if r.ok:
                     return r.content
             except:
