@@ -2,6 +2,8 @@
 
 OVOS Server TTS plugin for [Mimic3](https://github.com/MycroftAI/mimic3)
 
+### WARNING: this plugin is deprecated, please use https://github.com/OpenVoiceOS/ovos-tts-server-plugin instead
+
 ## Install
 
 `pip install ovos-tts-plugin-mimic3-server`
