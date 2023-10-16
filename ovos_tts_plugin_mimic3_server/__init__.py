@@ -19,10 +19,7 @@ from ovos_utils.log import LOG
 
 class Mimic3ServerTTSPlugin(TTS):
     """Interface to Mimic3 Server TTS."""
-    public_servers = [
-        "http://mycroft.blue-systems.com:59125/api/tts",
-        "https://mimic3sample.ziggyai.online/api/tts"
-    ]
+    public_servers = []
     default_voices = {
         # TODO add default voice for every lang
         "en": "en_US/cmu-arctic_low",
@@ -44,6 +41,7 @@ class Mimic3ServerTTSPlugin(TTS):
     }
 
     def __init__(self, lang="en-us", config=None):
+        LOG.warning("please move to ovos-tts-server instead, this plugin is no longer maintained\n https://github.com/OpenVoiceOS/ovos-tts-server-plugin")
         ssml_tags = ["speak", "s", "w", "voice", "prosody", "say-as", "break", "sub", "phoneme"]
         config = config or {}
         if "voice" not in config:
